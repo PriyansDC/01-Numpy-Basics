@@ -45,4 +45,64 @@ print(arr)
 zeros = np.zeros((3, 4))
 print("Zeros array: \n", zeros)
 
+ones = np.ones((2, 3))
+print("Ones array: \n", ones)
+
+full = np.full((2, 2), 7)
+print("Full array: \n", full)
+
+random = np.random.random((2, 3))
+print("Random array: \n", random)
+
+sequence = np.arange(0, 11, 2)
+print("Sequence array: \n", sequence)
+
+# %% [markdown]
+# Vector, Matrices and Tensor
+
+# %%
+vector = np.array([1, 2, 3])
+print("Vector: \n", vector)
+
+matrices = np.array([[1, 2, 3],
+                     [4, 5, 6]])
+print("Matrices: \n", matrices)
+
+tensor = np.array([[[1, 2], [3, 4]],
+                   [[5, 6], [7, 8]]])
+print("Tensor: \n", tensor)
+
+# %% [markdown]
+# Array properties
+
+# %%
+arr = np.array([[1, 2, 3],
+                [4, 5, 6]])
+print("Array: \n", arr)
+print("Shape: ", arr.shape)
+print("Dimension: ", arr.ndim)
+print("Size: ", arr.size)
+print("Data type: ", arr.dtype)
+
+# %% [markdown]
+# Array Reshaping
+
+# %%
+arr = np.arange(12)
+print("Original array: ", arr)
+
+reshaped = arr.reshape((3, 4))
+print("Reshaped array: \n", reshaped)
+
+flattened = reshaped.flatten()
+print("Flattened array: \n", flattened)
+
+# ravel (returns view, instead of copy)
+raveled = reshaped.ravel()
+print("Raveled array: \n", raveled)
+
+# Transpose
+transpose = reshaped.T
+print("Transpose array: \n", transpose)
+
 
